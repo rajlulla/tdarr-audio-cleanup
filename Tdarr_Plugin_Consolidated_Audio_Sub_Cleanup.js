@@ -314,7 +314,7 @@ const plugin = async (file, librarySettings, inputs, otherArguments) => {
   ).length;
 
   // Video: copy all video streams as-is
-  cmdParts.push('-map 0:v -c:v copy');
+  cmdParts.push('-map 0:V -c:v copy');
 
   // --- Audio ---
   for (const stream of file.ffProbeData.streams) {
